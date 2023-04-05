@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'form';
+@use 'sass:math';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $off-white;
+}
+
+.main-container {
+  width: fit-content;
+  padding: 3rem 1.5rem;
+  background-color: $white;
+  margin: 4rem auto;
+  border-radius: 24px 24px 100px 24px;
+}
+
+.break-line {
+  position: relative;
+  height: 1px;
+  transform: translateY(-33px);
+  z-index: 0;
+  background-color: $light-grey;
+}
+
+/* Typography */
+
+.text {
+  &__output {
+    color: $off-black;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  &--purple {
+    color: $purple;
+  }
+}
